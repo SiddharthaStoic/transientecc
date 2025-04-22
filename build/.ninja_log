@@ -1,0 +1,15 @@
+# ninja log v6
+34	187	7670062111073584	CMakeFiles/transientecc.dir/src/protocol.cpp.obj	ebda7ed59669f0be
+29	210	7670062111033398	CMakeFiles/transientecc.dir/src/obfuscator.cpp.obj	5cdd0ebaaf34fa22
+7	586	7670062110819932	CMakeFiles/transientecc.dir/src/curve_pool.cpp.obj	4347868f9df25fd9
+14	942	7670062110854321	CMakeFiles/transientecc.dir/src/keygen.cpp.obj	2eeb82234c4e0bf2
+20	961	7670062110940364	CMakeFiles/transientecc.dir/src/main.cpp.obj	62612e39ad9f77b5
+962	1133	7670062120347568	transientecc.exe	cfbbe1b4766b34ef
+50	487	7670067073387989	CMakeFiles/transientecc.dir/src/curve_pool.cpp.obj	4347868f9df25fd9
+56	537	7670067073387989	CMakeFiles/transientecc.dir/src/main.cpp.obj	62612e39ad9f77b5
+538	709	7670067078256782	transientecc.exe	cfbbe1b4766b34ef
+39	519	7670070790637319	CMakeFiles/transientecc.dir/src/main.cpp.obj	62612e39ad9f77b5
+48	677	7670070790657413	CMakeFiles/transientecc.dir/src/obfuscator.cpp.obj	5cdd0ebaaf34fa22
+678	857	7670070797026049	transientecc.exe	cfbbe1b4766b34ef
+49	596	7670083775765422	CMakeFiles/transientecc.dir/src/main.cpp.obj	62612e39ad9f77b5
+597	800	7670083781342948	transientecc.exe	cfbbe1b4766b34ef
