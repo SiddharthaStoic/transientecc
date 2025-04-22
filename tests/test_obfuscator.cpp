@@ -2,6 +2,7 @@
 #include <gtest/gtest.h>
 #include <openssl/ec.h>
 #include <openssl/bn.h>
+#include <openssl/obj_mac.h>  //This defines NID_X9_62_prime256v1
 
 TEST(ObfuscatorTest, MaskedPointIsOnCurve) {
     BN_CTX* ctx = BN_CTX_new();

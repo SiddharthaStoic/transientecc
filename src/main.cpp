@@ -12,7 +12,7 @@ using namespace transientecc;
 
 void printHexPoint(const EC_GROUP* group, const EC_POINT* point, BN_CTX* ctx) {
     char* hex = EC_POINT_point2hex(group, point, POINT_CONVERSION_UNCOMPRESSED, ctx);
-    std::cout << "📍 Blinded Public Point:\n" << hex << "\n\n";
+    std::cout << "Blinded Public Point:\n" << hex << "\n\n";
     OPENSSL_free(hex);
 }
 
@@ -25,7 +25,7 @@ int main() {
     for (int i = 0; i < 3; ++i) {
         int nid = pool.getNextCurve();
         std::string curve_name = getCurveName(nid);
-        std::cout << "🔁 Round #" << i + 1 << " using curve: " << curve_name << " (NID: " << nid << ")\n";
+        std::cout << "Round #" << i + 1 << " using curve: " << curve_name << " (NID: " << nid << ")\n";
 
         const EC_GROUP* group = EC_GROUP_new_by_curve_name(nid);
 
@@ -48,6 +48,6 @@ int main() {
     }
 
     BN_CTX_free(ctx);
-    std::cout << "✅ Demo complete.\n";
+    std::cout << "Demo complete.\n";
     return 0;
 }

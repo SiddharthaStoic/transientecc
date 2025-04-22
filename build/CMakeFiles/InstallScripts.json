@@ -1,7 +1,11 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/Siddhartha/Desktop/transientecc/build/cmake_install.cmake"
+		"C:/Users/Siddhartha/Desktop/transientecc/build/cmake_install.cmake",
+		"C:/Users/Siddhartha/Desktop/transientecc/build/tests/cmake_install.cmake",
+		"C:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/cmake_install.cmake",
+		"C:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/googlemock/cmake_install.cmake",
+		"C:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/googletest/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

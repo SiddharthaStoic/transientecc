@@ -44,14 +44,12 @@ cmake_ninja_workdir = C$:/Users/Siddhartha/Desktop/transientecc/build/
 
 build cmake_object_order_depends_target_transientecc: phony || .
 
-build CMakeFiles/transientecc.dir/src/curve_pool.cpp.obj: CXX_COMPILER__transientecc_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/curve_pool.cpp || cmake_object_order_depends_target_transientecc
-  DEP_FILE = CMakeFiles\transientecc.dir\src\curve_pool.cpp.obj.d
+build CMakeFiles/transientecc.dir/src/main.cpp.obj: CXX_COMPILER__transientecc_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/main.cpp || cmake_object_order_depends_target_transientecc
+  DEP_FILE = CMakeFiles\transientecc.dir\src\main.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
   OBJECT_DIR = CMakeFiles\transientecc.dir
   OBJECT_FILE_DIR = CMakeFiles\transientecc.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\transientecc.dir\
-  TARGET_PDB = transientecc.pdb
 
 build CMakeFiles/transientecc.dir/src/keygen.cpp.obj: CXX_COMPILER__transientecc_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/keygen.cpp || cmake_object_order_depends_target_transientecc
   DEP_FILE = CMakeFiles\transientecc.dir\src\keygen.cpp.obj.d
@@ -59,17 +57,13 @@ build CMakeFiles/transientecc.dir/src/keygen.cpp.obj: CXX_COMPILER__transientecc
   INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
   OBJECT_DIR = CMakeFiles\transientecc.dir
   OBJECT_FILE_DIR = CMakeFiles\transientecc.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\transientecc.dir\
-  TARGET_PDB = transientecc.pdb
 
-build CMakeFiles/transientecc.dir/src/main.cpp.obj: CXX_COMPILER__transientecc_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/main.cpp || cmake_object_order_depends_target_transientecc
-  DEP_FILE = CMakeFiles\transientecc.dir\src\main.cpp.obj.d
+build CMakeFiles/transientecc.dir/src/curve_pool.cpp.obj: CXX_COMPILER__transientecc_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/curve_pool.cpp || cmake_object_order_depends_target_transientecc
+  DEP_FILE = CMakeFiles\transientecc.dir\src\curve_pool.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
   OBJECT_DIR = CMakeFiles\transientecc.dir
   OBJECT_FILE_DIR = CMakeFiles\transientecc.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\transientecc.dir\
-  TARGET_PDB = transientecc.pdb
 
 build CMakeFiles/transientecc.dir/src/obfuscator.cpp.obj: CXX_COMPILER__transientecc_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/obfuscator.cpp || cmake_object_order_depends_target_transientecc
   DEP_FILE = CMakeFiles\transientecc.dir\src\obfuscator.cpp.obj.d
@@ -77,17 +71,6 @@ build CMakeFiles/transientecc.dir/src/obfuscator.cpp.obj: CXX_COMPILER__transien
   INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
   OBJECT_DIR = CMakeFiles\transientecc.dir
   OBJECT_FILE_DIR = CMakeFiles\transientecc.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\transientecc.dir\
-  TARGET_PDB = transientecc.pdb
-
-build CMakeFiles/transientecc.dir/src/protocol.cpp.obj: CXX_COMPILER__transientecc_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/protocol.cpp || cmake_object_order_depends_target_transientecc
-  DEP_FILE = CMakeFiles\transientecc.dir\src\protocol.cpp.obj.d
-  FLAGS = -std=gnu++17
-  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
-  OBJECT_DIR = CMakeFiles\transientecc.dir
-  OBJECT_FILE_DIR = CMakeFiles\transientecc.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\transientecc.dir\
-  TARGET_PDB = transientecc.pdb
 
 
 # =============================================================================
@@ -97,15 +80,363 @@ build CMakeFiles/transientecc.dir/src/protocol.cpp.obj: CXX_COMPILER__transiente
 #############################################
 # Link the executable transientecc.exe
 
-build transientecc.exe: CXX_EXECUTABLE_LINKER__transientecc_ CMakeFiles/transientecc.dir/src/curve_pool.cpp.obj CMakeFiles/transientecc.dir/src/keygen.cpp.obj CMakeFiles/transientecc.dir/src/main.cpp.obj CMakeFiles/transientecc.dir/src/obfuscator.cpp.obj CMakeFiles/transientecc.dir/src/protocol.cpp.obj | C$:/msys64/ucrt64/lib/libssl.dll.a C$:/msys64/ucrt64/lib/libcrypto.dll.a
+build transientecc.exe: CXX_EXECUTABLE_LINKER__transientecc_ CMakeFiles/transientecc.dir/src/main.cpp.obj CMakeFiles/transientecc.dir/src/keygen.cpp.obj CMakeFiles/transientecc.dir/src/curve_pool.cpp.obj CMakeFiles/transientecc.dir/src/obfuscator.cpp.obj | C$:/msys64/ucrt64/lib/libssl.dll.a C$:/msys64/ucrt64/lib/libcrypto.dll.a
   LINK_LIBRARIES = C:/msys64/ucrt64/lib/libssl.dll.a  C:/msys64/ucrt64/lib/libcrypto.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\transientecc.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\transientecc.dir\
   TARGET_FILE = transientecc.exe
   TARGET_IMPLIB = libtransientecc.dll.a
-  TARGET_PDB = transientecc.pdb
+  TARGET_PDB = transientecc.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ecdh_demo
+
+
+#############################################
+# Order-only phony target for ecdh_demo
+
+build cmake_object_order_depends_target_ecdh_demo: phony || .
+
+build CMakeFiles/ecdh_demo.dir/src/ecdh_demo.cpp.obj: CXX_COMPILER__ecdh_demo_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/ecdh_demo.cpp || cmake_object_order_depends_target_ecdh_demo
+  DEP_FILE = CMakeFiles\ecdh_demo.dir\src\ecdh_demo.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\ecdh_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\ecdh_demo.dir\src
+
+build CMakeFiles/ecdh_demo.dir/src/ECDHSession.cpp.obj: CXX_COMPILER__ecdh_demo_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/ECDHSession.cpp || cmake_object_order_depends_target_ecdh_demo
+  DEP_FILE = CMakeFiles\ecdh_demo.dir\src\ECDHSession.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\ecdh_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\ecdh_demo.dir\src
+
+build CMakeFiles/ecdh_demo.dir/src/curve_pool.cpp.obj: CXX_COMPILER__ecdh_demo_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/curve_pool.cpp || cmake_object_order_depends_target_ecdh_demo
+  DEP_FILE = CMakeFiles\ecdh_demo.dir\src\curve_pool.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\ecdh_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\ecdh_demo.dir\src
+
+build CMakeFiles/ecdh_demo.dir/src/obfuscator.cpp.obj: CXX_COMPILER__ecdh_demo_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/obfuscator.cpp || cmake_object_order_depends_target_ecdh_demo
+  DEP_FILE = CMakeFiles\ecdh_demo.dir\src\obfuscator.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\ecdh_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\ecdh_demo.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ecdh_demo
+
+
+#############################################
+# Link the executable ecdh_demo.exe
+
+build ecdh_demo.exe: CXX_EXECUTABLE_LINKER__ecdh_demo_ CMakeFiles/ecdh_demo.dir/src/ecdh_demo.cpp.obj CMakeFiles/ecdh_demo.dir/src/ECDHSession.cpp.obj CMakeFiles/ecdh_demo.dir/src/curve_pool.cpp.obj CMakeFiles/ecdh_demo.dir/src/obfuscator.cpp.obj | C$:/msys64/ucrt64/lib/libssl.dll.a C$:/msys64/ucrt64/lib/libcrypto.dll.a
+  LINK_LIBRARIES = C:/msys64/ucrt64/lib/libssl.dll.a  C:/msys64/ucrt64/lib/libcrypto.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ecdh_demo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ecdh_demo.exe
+  TARGET_IMPLIB = libecdh_demo.dll.a
+  TARGET_PDB = ecdh_demo.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target aes_demo
+
+
+#############################################
+# Order-only phony target for aes_demo
+
+build cmake_object_order_depends_target_aes_demo: phony || .
+
+build CMakeFiles/aes_demo.dir/src/aes_demo.cpp.obj: CXX_COMPILER__aes_demo_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/aes_demo.cpp || cmake_object_order_depends_target_aes_demo
+  DEP_FILE = CMakeFiles\aes_demo.dir\src\aes_demo.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\aes_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\aes_demo.dir\src
+
+build CMakeFiles/aes_demo.dir/src/AESGCM.cpp.obj: CXX_COMPILER__aes_demo_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/AESGCM.cpp || cmake_object_order_depends_target_aes_demo
+  DEP_FILE = CMakeFiles\aes_demo.dir\src\AESGCM.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\aes_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\aes_demo.dir\src
+
+build CMakeFiles/aes_demo.dir/src/ECDHSession.cpp.obj: CXX_COMPILER__aes_demo_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/ECDHSession.cpp || cmake_object_order_depends_target_aes_demo
+  DEP_FILE = CMakeFiles\aes_demo.dir\src\ECDHSession.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\aes_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\aes_demo.dir\src
+
+build CMakeFiles/aes_demo.dir/src/obfuscator.cpp.obj: CXX_COMPILER__aes_demo_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/obfuscator.cpp || cmake_object_order_depends_target_aes_demo
+  DEP_FILE = CMakeFiles\aes_demo.dir\src\obfuscator.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\aes_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\aes_demo.dir\src
+
+build CMakeFiles/aes_demo.dir/src/curve_pool.cpp.obj: CXX_COMPILER__aes_demo_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/curve_pool.cpp || cmake_object_order_depends_target_aes_demo
+  DEP_FILE = CMakeFiles\aes_demo.dir\src\curve_pool.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\aes_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\aes_demo.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target aes_demo
+
+
+#############################################
+# Link the executable aes_demo.exe
+
+build aes_demo.exe: CXX_EXECUTABLE_LINKER__aes_demo_ CMakeFiles/aes_demo.dir/src/aes_demo.cpp.obj CMakeFiles/aes_demo.dir/src/AESGCM.cpp.obj CMakeFiles/aes_demo.dir/src/ECDHSession.cpp.obj CMakeFiles/aes_demo.dir/src/obfuscator.cpp.obj CMakeFiles/aes_demo.dir/src/curve_pool.cpp.obj | C$:/msys64/ucrt64/lib/libssl.dll.a C$:/msys64/ucrt64/lib/libcrypto.dll.a
+  LINK_LIBRARIES = C:/msys64/ucrt64/lib/libssl.dll.a  C:/msys64/ucrt64/lib/libcrypto.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\aes_demo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = aes_demo.exe
+  TARGET_IMPLIB = libaes_demo.dll.a
+  TARGET_PDB = aes_demo.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target benchmark
+
+
+#############################################
+# Order-only phony target for benchmark
+
+build cmake_object_order_depends_target_benchmark: phony || .
+
+build CMakeFiles/benchmark.dir/src/benchmark.cpp.obj: CXX_COMPILER__benchmark_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/benchmark.cpp || cmake_object_order_depends_target_benchmark
+  DEP_FILE = CMakeFiles\benchmark.dir\src\benchmark.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = CMakeFiles\benchmark.dir\src
+
+build CMakeFiles/benchmark.dir/src/ECDHSession.cpp.obj: CXX_COMPILER__benchmark_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/ECDHSession.cpp || cmake_object_order_depends_target_benchmark
+  DEP_FILE = CMakeFiles\benchmark.dir\src\ECDHSession.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = CMakeFiles\benchmark.dir\src
+
+build CMakeFiles/benchmark.dir/src/curve_pool.cpp.obj: CXX_COMPILER__benchmark_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/curve_pool.cpp || cmake_object_order_depends_target_benchmark
+  DEP_FILE = CMakeFiles\benchmark.dir\src\curve_pool.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = CMakeFiles\benchmark.dir\src
+
+build CMakeFiles/benchmark.dir/src/obfuscator.cpp.obj: CXX_COMPILER__benchmark_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/obfuscator.cpp || cmake_object_order_depends_target_benchmark
+  DEP_FILE = CMakeFiles\benchmark.dir\src\obfuscator.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include
+  OBJECT_DIR = CMakeFiles\benchmark.dir
+  OBJECT_FILE_DIR = CMakeFiles\benchmark.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target benchmark
+
+
+#############################################
+# Link the executable benchmark.exe
+
+build benchmark.exe: CXX_EXECUTABLE_LINKER__benchmark_ CMakeFiles/benchmark.dir/src/benchmark.cpp.obj CMakeFiles/benchmark.dir/src/ECDHSession.cpp.obj CMakeFiles/benchmark.dir/src/curve_pool.cpp.obj CMakeFiles/benchmark.dir/src/obfuscator.cpp.obj | C$:/msys64/ucrt64/lib/libssl.dll.a C$:/msys64/ucrt64/lib/libcrypto.dll.a
+  LINK_LIBRARIES = C:/msys64/ucrt64/lib/libssl.dll.a  C:/msys64/ucrt64/lib/libcrypto.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\benchmark.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = benchmark.exe
+  TARGET_IMPLIB = libbenchmark.dll.a
+  TARGET_PDB = benchmark.exe.dbg
+
+
+#############################################
+# Utility command for Experimental
+
+build Experimental: phony CMakeFiles/Experimental
+
+
+#############################################
+# Utility command for Nightly
+
+build Nightly: phony CMakeFiles/Nightly
+
+
+#############################################
+# Utility command for Continuous
+
+build Continuous: phony CMakeFiles/Continuous
+
+
+#############################################
+# Utility command for NightlyMemoryCheck
+
+build NightlyMemoryCheck: phony CMakeFiles/NightlyMemoryCheck
+
+
+#############################################
+# Utility command for NightlyStart
+
+build NightlyStart: phony CMakeFiles/NightlyStart
+
+
+#############################################
+# Utility command for NightlyUpdate
+
+build NightlyUpdate: phony CMakeFiles/NightlyUpdate
+
+
+#############################################
+# Utility command for NightlyConfigure
+
+build NightlyConfigure: phony CMakeFiles/NightlyConfigure
+
+
+#############################################
+# Utility command for NightlyBuild
+
+build NightlyBuild: phony CMakeFiles/NightlyBuild
+
+
+#############################################
+# Utility command for NightlyTest
+
+build NightlyTest: phony CMakeFiles/NightlyTest
+
+
+#############################################
+# Utility command for NightlyCoverage
+
+build NightlyCoverage: phony CMakeFiles/NightlyCoverage
+
+
+#############################################
+# Utility command for NightlyMemCheck
+
+build NightlyMemCheck: phony CMakeFiles/NightlyMemCheck
+
+
+#############################################
+# Utility command for NightlySubmit
+
+build NightlySubmit: phony CMakeFiles/NightlySubmit
+
+
+#############################################
+# Utility command for ExperimentalStart
+
+build ExperimentalStart: phony CMakeFiles/ExperimentalStart
+
+
+#############################################
+# Utility command for ExperimentalUpdate
+
+build ExperimentalUpdate: phony CMakeFiles/ExperimentalUpdate
+
+
+#############################################
+# Utility command for ExperimentalConfigure
+
+build ExperimentalConfigure: phony CMakeFiles/ExperimentalConfigure
+
+
+#############################################
+# Utility command for ExperimentalBuild
+
+build ExperimentalBuild: phony CMakeFiles/ExperimentalBuild
+
+
+#############################################
+# Utility command for ExperimentalTest
+
+build ExperimentalTest: phony CMakeFiles/ExperimentalTest
+
+
+#############################################
+# Utility command for ExperimentalCoverage
+
+build ExperimentalCoverage: phony CMakeFiles/ExperimentalCoverage
+
+
+#############################################
+# Utility command for ExperimentalMemCheck
+
+build ExperimentalMemCheck: phony CMakeFiles/ExperimentalMemCheck
+
+
+#############################################
+# Utility command for ExperimentalSubmit
+
+build ExperimentalSubmit: phony CMakeFiles/ExperimentalSubmit
+
+
+#############################################
+# Utility command for ContinuousStart
+
+build ContinuousStart: phony CMakeFiles/ContinuousStart
+
+
+#############################################
+# Utility command for ContinuousUpdate
+
+build ContinuousUpdate: phony CMakeFiles/ContinuousUpdate
+
+
+#############################################
+# Utility command for ContinuousConfigure
+
+build ContinuousConfigure: phony CMakeFiles/ContinuousConfigure
+
+
+#############################################
+# Utility command for ContinuousBuild
+
+build ContinuousBuild: phony CMakeFiles/ContinuousBuild
+
+
+#############################################
+# Utility command for ContinuousTest
+
+build ContinuousTest: phony CMakeFiles/ContinuousTest
+
+
+#############################################
+# Utility command for ContinuousCoverage
+
+build ContinuousCoverage: phony CMakeFiles/ContinuousCoverage
+
+
+#############################################
+# Utility command for ContinuousMemCheck
+
+build ContinuousMemCheck: phony CMakeFiles/ContinuousMemCheck
+
+
+#############################################
+# Utility command for ContinuousSubmit
+
+build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
 
 
 #############################################
@@ -130,8 +461,799 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
+# Custom command for CMakeFiles\Experimental
+
+build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D Experimental"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\Nightly
+
+build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D Nightly"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\Continuous
+
+build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D Continuous"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyMemoryCheck
+
+build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D NightlyMemoryCheck"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyStart
+
+build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D NightlyStart"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyUpdate
+
+build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D NightlyUpdate"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyConfigure
+
+build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D NightlyConfigure"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyBuild
+
+build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D NightlyBuild"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyTest
+
+build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D NightlyTest"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyCoverage
+
+build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D NightlyCoverage"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlyMemCheck
+
+build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D NightlyMemCheck"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\NightlySubmit
+
+build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D NightlySubmit"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalStart
+
+build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ExperimentalStart"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalUpdate
+
+build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ExperimentalUpdate"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalConfigure
+
+build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ExperimentalConfigure"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalBuild
+
+build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ExperimentalBuild"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalTest
+
+build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ExperimentalTest"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalCoverage
+
+build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ExperimentalCoverage"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalMemCheck
+
+build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ExperimentalMemCheck"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ExperimentalSubmit
+
+build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ExperimentalSubmit"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousStart
+
+build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousStart: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ContinuousStart"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousUpdate
+
+build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ContinuousUpdate"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousConfigure
+
+build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ContinuousConfigure"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousBuild
+
+build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ContinuousBuild"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousTest
+
+build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTest: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ContinuousTest"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousCoverage
+
+build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ContinuousCoverage"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousMemCheck
+
+build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ContinuousMemCheck"
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles\ContinuousSubmit
+
+build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build && C:\msys64\ucrt64\bin\ctest.exe -D ContinuousSubmit"
+  pool = console
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Siddhartha/Desktop/transientecc/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target runTests
+
+
+#############################################
+# Order-only phony target for runTests
+
+build cmake_object_order_depends_target_runTests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build tests/CMakeFiles/runTests.dir/test_obfuscator.cpp.obj: CXX_COMPILER__runTests_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/tests/test_obfuscator.cpp || cmake_object_order_depends_target_runTests
+  DEP_FILE = tests\CMakeFiles\runTests.dir\test_obfuscator.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest
+  OBJECT_DIR = tests\CMakeFiles\runTests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\runTests.dir
+
+build tests/CMakeFiles/runTests.dir/__/src/obfuscator.cpp.obj: CXX_COMPILER__runTests_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/obfuscator.cpp || cmake_object_order_depends_target_runTests
+  DEP_FILE = tests\CMakeFiles\runTests.dir\__\src\obfuscator.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest
+  OBJECT_DIR = tests\CMakeFiles\runTests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\runTests.dir\__\src
+
+build tests/CMakeFiles/runTests.dir/__/src/curve_pool.cpp.obj: CXX_COMPILER__runTests_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/src/curve_pool.cpp || cmake_object_order_depends_target_runTests
+  DEP_FILE = tests\CMakeFiles\runTests.dir\__\src\curve_pool.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest
+  OBJECT_DIR = tests\CMakeFiles\runTests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\runTests.dir\__\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target runTests
+
+
+#############################################
+# Link the executable tests\runTests.exe
+
+build tests/runTests.exe: CXX_EXECUTABLE_LINKER__runTests_ tests/CMakeFiles/runTests.dir/test_obfuscator.cpp.obj tests/CMakeFiles/runTests.dir/__/src/obfuscator.cpp.obj tests/CMakeFiles/runTests.dir/__/src/curve_pool.cpp.obj | lib/libgtest.a lib/libgtest_main.a C$:/msys64/ucrt64/lib/libssl.dll.a C$:/msys64/ucrt64/lib/libcrypto.dll.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  C:/msys64/ucrt64/lib/libssl.dll.a  C:/msys64/ucrt64/lib/libcrypto.dll.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\runTests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\runTests.exe
+  TARGET_IMPLIB = tests\librunTests.dll.a
+  TARGET_PDB = runTests.exe.dbg
+
+
+#############################################
+# Utility command for test
+
+build tests/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests && C:\msys64\ucrt64\bin\ctest.exe "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build tests/test: phony tests/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests && C:\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tests/edit_cache: phony tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests && C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\Users\Siddhartha\Desktop\transientecc -BC:\Users\Siddhartha\Desktop\transientecc\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tests/rebuild_cache: phony tests/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build tests/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build tests/CMakeFiles/install.util: CUSTOM_COMMAND tests/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests && C:\msys64\ucrt64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build tests/install: phony tests/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build tests/CMakeFiles/install/local.util: CUSTOM_COMMAND tests/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests && C:\msys64\ucrt64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build tests/install/local: phony tests/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build tests/CMakeFiles/install/strip.util: CUSTOM_COMMAND tests/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests && C:\msys64\ucrt64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build tests/install/strip: phony tests/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Siddhartha/Desktop/transientecc/tests/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build tests/gtest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest && C:\msys64\ucrt64\bin\ctest.exe "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build tests/gtest/test: phony tests/gtest/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build tests/gtest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest && C:\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tests/gtest/edit_cache: phony tests/gtest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tests/gtest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest && C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\Users\Siddhartha\Desktop\transientecc -BC:\Users\Siddhartha\Desktop\transientecc\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tests/gtest/rebuild_cache: phony tests/gtest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build tests/gtest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build tests/gtest/CMakeFiles/install.util: CUSTOM_COMMAND tests/gtest/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest && C:\msys64\ucrt64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build tests/gtest/install: phony tests/gtest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build tests/gtest/CMakeFiles/install/local.util: CUSTOM_COMMAND tests/gtest/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest && C:\msys64\ucrt64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build tests/gtest/install/local: phony tests/gtest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build tests/gtest/CMakeFiles/install/strip.util: CUSTOM_COMMAND tests/gtest/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest && C:\msys64\ucrt64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build tests/gtest/install/strip: phony tests/gtest/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
+
+build tests/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEP_FILE = tests\gtest\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
+  FLAGS = -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include -IC:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/include -IC:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest
+  OBJECT_DIR = tests\gtest\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = tests\gtest\googlemock\CMakeFiles\gmock.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib\libgmock.a
+
+build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_ tests/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj || lib/libgtest.a
+  OBJECT_DIR = tests\gtest\googlemock\CMakeFiles\gmock.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgmock.a
+  TARGET_PDB = gmock.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
+
+build tests/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEP_FILE = tests\gtest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
+  FLAGS = -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -isystem C:/Users/Siddhartha/Desktop/transientecc/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest
+  OBJECT_DIR = tests\gtest\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = tests\gtest\googlemock\CMakeFiles\gmock_main.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib\libgmock_main.a
+
+build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_ tests/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj || lib/libgmock.a lib/libgtest.a
+  OBJECT_DIR = tests\gtest\googlemock\CMakeFiles\gmock_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgmock_main.a
+  TARGET_PDB = gmock_main.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build tests/gtest/googlemock/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googlemock && C:\msys64\ucrt64\bin\ctest.exe "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build tests/gtest/googlemock/test: phony tests/gtest/googlemock/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build tests/gtest/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googlemock && C:\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tests/gtest/googlemock/edit_cache: phony tests/gtest/googlemock/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tests/gtest/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googlemock && C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\Users\Siddhartha\Desktop\transientecc -BC:\Users\Siddhartha\Desktop\transientecc\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tests/gtest/googlemock/rebuild_cache: phony tests/gtest/googlemock/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build tests/gtest/googlemock/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build tests/gtest/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND tests/gtest/googlemock/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googlemock && C:\msys64\ucrt64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build tests/gtest/googlemock/install: phony tests/gtest/googlemock/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build tests/gtest/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND tests/gtest/googlemock/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googlemock && C:\msys64\ucrt64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build tests/gtest/googlemock/install/local: phony tests/gtest/googlemock/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build tests/gtest/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND tests/gtest/googlemock/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googlemock && C:\msys64\ucrt64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build tests/gtest/googlemock/install/strip: phony tests/gtest/googlemock/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || .
+
+build tests/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = tests\gtest\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
+  FLAGS = -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include -IC:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/include -IC:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest
+  OBJECT_DIR = tests\gtest\googletest\CMakeFiles\gtest.dir
+  OBJECT_FILE_DIR = tests\gtest\googletest\CMakeFiles\gtest.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib\libgtest.a
+
+build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_ tests/gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+  OBJECT_DIR = tests\gtest\googletest\CMakeFiles\gtest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgtest.a
+  TARGET_PDB = gtest.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build tests/gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_ C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = tests\gtest\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
+  FLAGS = -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Siddhartha/Desktop/transientecc/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/include -isystem C:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest
+  OBJECT_DIR = tests\gtest\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_FILE_DIR = tests\gtest\googletest\CMakeFiles\gtest_main.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib\libgtest_main.a
+
+build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_ tests/gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj || lib/libgtest.a
+  OBJECT_DIR = tests\gtest\googletest\CMakeFiles\gtest_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgtest_main.a
+  TARGET_PDB = gtest_main.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build tests/gtest/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googletest && C:\msys64\ucrt64\bin\ctest.exe "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build tests/gtest/googletest/test: phony tests/gtest/googletest/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build tests/gtest/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googletest && C:\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tests/gtest/googletest/edit_cache: phony tests/gtest/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tests/gtest/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googletest && C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -SC:\Users\Siddhartha\Desktop\transientecc -BC:\Users\Siddhartha\Desktop\transientecc\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tests/gtest/googletest/rebuild_cache: phony tests/gtest/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build tests/gtest/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build tests/gtest/googletest/CMakeFiles/install.util: CUSTOM_COMMAND tests/gtest/googletest/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googletest && C:\msys64\ucrt64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build tests/gtest/googletest/install: phony tests/gtest/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build tests/gtest/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND tests/gtest/googletest/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googletest && C:\msys64\ucrt64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build tests/gtest/googletest/install/local: phony tests/gtest/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build tests/gtest/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND tests/gtest/googletest/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Siddhartha\Desktop\transientecc\build\tests\gtest\googletest && C:\msys64\ucrt64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build tests/gtest/googletest/install/strip: phony tests/gtest/googletest/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
+
+build aes_demo: phony aes_demo.exe
+
+build benchmark: phony benchmark.exe
+
+build ecdh_demo: phony ecdh_demo.exe
+
+build gmock: phony lib/libgmock.a
+
+build gmock_main: phony lib/libgmock_main.a
+
+build gtest: phony lib/libgtest.a
+
+build gtest_main: phony lib/libgtest_main.a
+
+build libgmock.a: phony lib/libgmock.a
+
+build libgmock_main.a: phony lib/libgmock_main.a
+
+build libgtest.a: phony lib/libgtest.a
+
+build libgtest_main.a: phony lib/libgtest_main.a
+
+build runTests: phony tests/runTests.exe
+
+build runTests.exe: phony tests/runTests.exe
 
 build transientecc: phony transientecc.exe
 
@@ -143,7 +1265,35 @@ build transientecc: phony transientecc.exe
 #############################################
 # Folder: C:/Users/Siddhartha/Desktop/transientecc/build
 
-build all: phony transientecc.exe
+build all: phony transientecc.exe ecdh_demo.exe aes_demo.exe benchmark.exe tests/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Siddhartha/Desktop/transientecc/build/tests
+
+build tests/all: phony tests/runTests.exe tests/gtest/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest
+
+build tests/gtest/all: phony tests/gtest/googlemock/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/googlemock
+
+build tests/gtest/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a tests/gtest/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/googletest
+
+build tests/gtest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
 # Built-in targets
@@ -152,14 +1302,14 @@ build all: phony transientecc.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/Siddhartha/Desktop/transientecc/build/cmake_install.cmake: RERUN_CMAKE | C$:/Users/Siddhartha/Desktop/transientecc/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-CXXImportStd.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindOpenSSL.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.1/CMakeCCompiler.cmake CMakeFiles/4.0.1/CMakeCXXCompiler.cmake CMakeFiles/4.0.1/CMakeRCCompiler.cmake CMakeFiles/4.0.1/CMakeSystem.cmake
+build build.ninja C$:/Users/Siddhartha/Desktop/transientecc/build/cmake_install.cmake C$:/Users/Siddhartha/Desktop/transientecc/build/tests/cmake_install.cmake C$:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/cmake_install.cmake C$:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/googlemock/cmake_install.cmake C$:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/googletest/cmake_install.cmake C$:/Users/Siddhartha/Desktop/transientecc/build/CTestTestfile.cmake C$:/Users/Siddhartha/Desktop/transientecc/build/tests/CTestTestfile.cmake C$:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/CTestTestfile.cmake C$:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/googlemock/CTestTestfile.cmake C$:/Users/Siddhartha/Desktop/transientecc/build/tests/gtest/googletest/CTestTestfile.cmake: RERUN_CMAKE | C$:/Users/Siddhartha/Desktop/transientecc/CMakeLists.txt C$:/Users/Siddhartha/Desktop/transientecc/tests/CMakeLists.txt C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/CMakeLists.txt C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/CMakeLists.txt C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/cmake/gmock.pc.in C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/cmake/gmock_main.pc.in C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/CMakeLists.txt C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/cmake/Config.cmake.in C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/cmake/gtest.pc.in C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/cmake/gtest_main.pc.in C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/cmake/internal_utils.cmake C$:/msys64/ucrt64/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CTest.cmake C$:/msys64/ucrt64/share/cmake/Modules/CTestTargets.cmake C$:/msys64/ucrt64/share/cmake/Modules/CTestUseLaunchers.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/DartConfiguration.tcl.in C$:/msys64/ucrt64/share/cmake/Modules/FindOpenSSL.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/ucrt64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.0.1/CMakeCCompiler.cmake CMakeFiles/4.0.1/CMakeCXXCompiler.cmake CMakeFiles/4.0.1/CMakeRCCompiler.cmake CMakeFiles/4.0.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/Siddhartha/Desktop/transientecc/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-CXXImportStd.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindOpenSSL.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.1/CMakeCCompiler.cmake CMakeFiles/4.0.1/CMakeCXXCompiler.cmake CMakeFiles/4.0.1/CMakeRCCompiler.cmake CMakeFiles/4.0.1/CMakeSystem.cmake: phony
+build C$:/Users/Siddhartha/Desktop/transientecc/CMakeLists.txt C$:/Users/Siddhartha/Desktop/transientecc/tests/CMakeLists.txt C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/CMakeLists.txt C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/CMakeLists.txt C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/cmake/gmock.pc.in C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googlemock/cmake/gmock_main.pc.in C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/CMakeLists.txt C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/cmake/Config.cmake.in C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/cmake/gtest.pc.in C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/cmake/gtest_main.pc.in C$:/Users/Siddhartha/Desktop/transientecc/tests/gtest/googletest/cmake/internal_utils.cmake C$:/msys64/ucrt64/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDependentOption.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CTest.cmake C$:/msys64/ucrt64/share/cmake/Modules/CTestTargets.cmake C$:/msys64/ucrt64/share/cmake/Modules/CTestUseLaunchers.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/DartConfiguration.tcl.in C$:/msys64/ucrt64/share/cmake/Modules/FindOpenSSL.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/GNUInstallDirs.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/msys64/ucrt64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/4.0.1/CMakeCCompiler.cmake CMakeFiles/4.0.1/CMakeCXXCompiler.cmake CMakeFiles/4.0.1/CMakeRCCompiler.cmake CMakeFiles/4.0.1/CMakeSystem.cmake: phony
 
 
 #############################################

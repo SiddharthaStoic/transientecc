@@ -1,0 +1,34 @@
+# Ignore build directory
+/build/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Executables and object files
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+*.a
+*.lib
+
+# Logs and temp
+*.log
+*.tmp
+
+# IDE and OS-specific files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Test outputs
+Testing/
+test-output/
+tests/*.exe
+
+# Ignore any backup
+*~
