@@ -50,7 +50,7 @@ The graph below shows ECC key exchange time (ms per round) with increasing fake 
 ## Build Instructions
 
 ```bash
-git clone https://github.com/your-username/transientecc.git
+git clone https://github.com/SiddharthaStoic/transientecc.git
 cd transientecc
 mkdir build && cd build
 cmake .. -DBUILD_TESTING=ON
